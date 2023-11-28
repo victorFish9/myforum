@@ -43,6 +43,6 @@ public class MainController {
         int newSize = Integer.parseInt(newuser.get("size"));
         userRepository.save(new User(newName,newPwd,newSize));
         response.setStatus(201);
-        return "addedUser";
+        return "redirect:../home";
     }
 }

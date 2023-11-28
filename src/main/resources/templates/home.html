@@ -6,8 +6,8 @@
 </head>
 <body>
 <h2>Welcome to my site</h2>
-<p>Hello, <span th:text="${name}"></span></p>
-<h2>Users</h2>
+<a href="/home/add">Add user</a>
+<h2>List of Users</h2>
 <div th:each="x: ${users}">
     <h3 th:text="${x.name}"></h3>
 </div>
